@@ -1,6 +1,6 @@
-# germancomp
+# thuringiancomp
 
-NAME = "germancomp"
+NAME = "thuringiancomp"
 SRC = ${NAME}.c
 OBJ = ${SRC:.c=.o}
 PREFIX = /usr/local
