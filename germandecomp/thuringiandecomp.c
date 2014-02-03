@@ -4,7 +4,7 @@
 
 int main(int argc, char** argv) {
   if(argc != 3) {
-    printf("Usage: %s [input binary file] [output german file]\n", argv[0]);
+    printf("Usage: %s [input binary file] [output thuringian file]\n", argv[0]);
     exit(0);
   }
   FILE* input;
@@ -26,9 +26,9 @@ int main(int argc, char** argv) {
   while((c = fgetc(input)) != EOF) {
     for(int i = 7; i >= 0; i--) {
       if(c & (1 << i))
-        fprintf(output, "BEER");
+        fprintf(output, "KLOSS");
       else
-        fprintf(output, "SCHNITZEL");
+        fprintf(output, "BRATWURST");
       if(i != 0)
         fprintf(output, " ");;
     }
